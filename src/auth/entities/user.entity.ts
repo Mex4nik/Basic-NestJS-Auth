@@ -1,15 +1,12 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-class User {
+class AccessToken {
   @PrimaryGeneratedColumn()
   public id?: number;
 
-  @Column({ unique: true })
-  public email: string;
-
   @Column()
-  public password: string;
+  public token: string;
 }
 
-export default User;
+export default AccessToken;
