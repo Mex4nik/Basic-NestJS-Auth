@@ -6,3 +6,22 @@
 5. First of all use, `sign up` or `sign in` endpoint, there in response, you will have accessToken, use it for protected endpoints
 6. To refresh a token, use `refresh` endpoint.
 7. Make a request to `Get users` endpoint with token.
+
+### Setup environment variables
+#### .env file
+```
+PORT=3001
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_USER=admin
+POSTGRES_PASSWORD=admin
+POSTGRES_DB=nestjs-basic-auth
+
+JWT_ACCESS_SECRET=
+```
+#### docker.env file
+```
+POSTGRES_USER=admin
+POSTGRES_PASSWORD=admin
+POSTGRES_DB=nestjs-basic-auth
+```
